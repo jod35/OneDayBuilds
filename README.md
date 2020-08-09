@@ -7,7 +7,9 @@ This is a repo for projects I will build in a one day (24-hour duration). Some w
 It is independent of languages and technologies.
 
 ## Projects
-No projects yet.
+| Date      |  Name      | Language(s) |
+|-----------|------------|-------------|
+| 9/08/2020 |Diary      | HTML , CSS, JavaScript, Python (Flask) |
 
 ## Contributions
 All contributions are welcome.

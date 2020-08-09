@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(92, 149, 5);
+    color: white;
+}
+.options{
+    padding: 5px;
+}
+.options a{
+    margin: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    color: rgb(92, 149, 5);
+    background-color: white;
+}
+.menu-open-btn{
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+.menu-close-btn{
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+.mobile-nav-options{
+    display: none;
+}
+.mobile-nav{
+  /* display: none; */
+  height:0vh;
+  background-color: rgb(92, 149, 5);
+  transition: width 1.8s, height 1.8s;
+}
+.mobile-nav-items{
+    width: 100%;
+    display: none;
+}
+.mobile-nav-items a{
+    color: white;
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+.mobile-link{
+    text-align: center;
+    text-transform:capitalize;
+    font-weight: bold;
+}
+.mobile-link:hover{
+    background-color: white;
+    color: rgb(92, 149, 5);
+}
+.welcome{
+    min-height: 40vh;
+    padding: 10%;
+    color: rgb(92, 149, 5);
+}
+
+.mybtn{
+    padding: 20px;
+    color: rgb(92, 149, 5);
+    border: 1px solid rgb(92, 149, 5);   
+}
+.mybtn:hover{
+    color: rgb(92, 149, 5);
+    background-color:rgb(235, 251, 209);
+}
+@media(max-width:600px){
+    .options{
+        display: none;
+    }
+    .mobile-nav-options{
+        display: block;
+    }
+}
