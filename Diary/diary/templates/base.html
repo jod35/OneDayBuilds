@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static',filename='diary/css/main.css')}}">
-    <title>My Dairy</title>
+    
+    {% if title %}
+        <title>My Dairy | {{title}}</title>
+    {% else %}
+        <title>My Dairy</title>
+    {% endif %}
+        
 </head>
 <body>
     <header>
-        <div class="logo"><h2>My Dairy</h2></div>
+        <div >
+            <a href="{{ url_for('index') }}" class="logo"><h2>My Dairy</h2></a>
+        </div>
         <div class="options">
-            <a href="#add-form">Add Event</a>
-            <a href="#view-events">View Your Events</a>
+            
+            {% if current_user.is_authenticated %}
+                <a href="#add-form">Add Event</a>
+                <a href="#view-events">View Your Events</a>
+                <a href="">Log Out</a>
+            {% else %}
+                <a href="{{ url_for('create_account') }}">Sign Up</a>
+                <a href="{{ url_for('sign_in') }}">Login</a>
+            {% endif %}
+                
         </div>
         <div class="mobile-nav-options">
             <a href="#" class="menu-open-btn">&#9776;</a>

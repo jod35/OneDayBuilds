@@ -13,6 +13,9 @@ header{
     background-color: rgb(92, 149, 5);
     color: white;
 }
+.logo{
+    color: white;
+}
 .options{
     padding: 5px;
 }
