@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static',filename='diary/css/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='diary/css/bootstrap.min.css')}}">
+
     
     {% if title %}
         <title>My Dairy | {{title}}</title>
@@ -13,11 +15,11 @@
         
 </head>
 <body>
-    <header>
+    <header class="nav nav-bar">
         <div >
-            <a href="{{ url_for('index') }}" class="logo"><h2>My Dairy</h2></a>
+            <a href="{{ url_for('index') }}" class="logo">My Dairy</a>
         </div>
-        <div class="options">
+        <div class="nav-options">
             
             {% if current_user.is_authenticated %}
                 <a href="#add-form">Add Event</a>
@@ -41,8 +43,8 @@
                 <a href="#add-form" class="mobile-link">Add Event</a>
                 <a href="#view-events" class="mobile-link">View Your Events</a>
             {% else %}
-                <a href="#add-form" class="mobile-link">Add Event</a>
-                <a href="#view-events" class="mobile-link">View Your Events</a>
+                <a href="{{ url_for('create_account') }}">Sign Up</a>
+                <a href="{{ url_for('sign_in') }}">Login</a>
             {% endif %}
                 
        </div>

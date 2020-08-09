@@ -1,5 +1,6 @@
 from diary import db,app
 from flask import render_template
+from .forms import RegistrationForm,LoginForm,EventCreation
 
 @app.route('/')
 def index():
@@ -11,16 +12,20 @@ def index():
 
 @app.route('/login')
 def sign_in():
+    form=LoginForm()
     context={
-        'title':'Login'
+        'title':'Login',
+        'form':form
     }
     return render_template('login.html',**context)
 
 
 @app.route('/signup')
 def create_account():
+    form = RegistrationForm()
     context={
-        'title':'Create Your Free Account'
+        'title':'Create Your Free Account',
+        'form':form
     }
     return render_template('signup.html',**context)
 
