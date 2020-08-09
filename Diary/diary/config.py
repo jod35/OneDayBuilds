@@ -5,4 +5,5 @@ class Config:
     SECRET_KEY='44ecd382bb8fbc50e7a17866'
     DEBUG=True
 
+
     

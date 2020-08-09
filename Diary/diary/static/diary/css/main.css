@@ -13,26 +13,49 @@ header{
     background-color: rgb(92, 149, 5);
     color: white;
 }
-.options{
-    padding: 5px;
+.logo{
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.options a{
+.logo:hover{
+    color: white;
+    text-decoration: none;
+}
+.nav-options{
+    padding: 5px;
+
+}
+.nav-options a{
     margin: 20px;
     text-transform: capitalize;
     padding: 10px;
     color: rgb(92, 149, 5);
     background-color: white;
 }
+.nav-options a:hover{
+    color: rgb(92, 149, 5);
+    text-decoration: none;
+}
 .menu-open-btn{
     padding: 10px;
     color: white;
     font-size: 24px;
+}
+.menu-open-btn:hover{
+    color: white;
+    text-decoration: none;
 }
 .menu-close-btn{
     padding: 10px;
     color: white;
     font-size: 24px;
     display: none;
+}
+.menu-close-btn:hover{
+    color: white;
+    text-decoration: none;
 }
 .mobile-nav-options{
     display: none;
@@ -52,6 +75,12 @@ header{
     padding: 20px;
     display: block;
     width: 100%;
+    text-transform: uppercase;
+}
+.mobile-nav-items a:hover{
+    text-decoration: none;
+    color: rgb(92, 149, 5);
+    background-color: white;
 }
 .mobile-link{
     text-align: center;
@@ -70,15 +99,22 @@ header{
 
 .mybtn{
     padding: 20px;
+    background: none;
     color: rgb(92, 149, 5);
     border: 1px solid rgb(92, 149, 5);   
 }
 .mybtn:hover{
     color: rgb(92, 149, 5);
     background-color:rgb(235, 251, 209);
+    text-decoration: none;
+}
+.form{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
 }
 @media(max-width:600px){
-    .options{
+    .nav-options{
         display: none;
     }
     .mobile-nav-options{
