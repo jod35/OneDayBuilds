@@ -24,3 +24,4 @@ function hideMobileNav(){
     mobileNav.style.height="0vh";
     mobileNavItems.style.display="none";
 }
+
