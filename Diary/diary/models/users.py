@@ -9,6 +9,10 @@ class User(db.Model,UserMixin):
     email=db.Column(db.String(40),nullable=False)
     password=db.Column(db.Text)
 
+    from ..models.events import Event 
+
+    events=db.relationship('Event',backref='author',lazy=True)
+
     def set_password(self,password):
         self.password=generate_password_hash(password)
 

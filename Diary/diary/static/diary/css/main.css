@@ -118,13 +118,17 @@ header{
     padding-top: 5%;
 }
 .addform{
-    min-height: 100vh;
+    min-height: 70vh;
     width: 80%;
     margin: auto;
     padding-top: 5%;
 
 }
-
+.event{
+    color: rgb(92, 149, 5);
+    padding: 20px;
+    box-shadow: 0px 12px 15px 0 lightgray;
+}
 @media(max-width:600px){
     .nav-options{
         display: none;

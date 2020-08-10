@@ -23,7 +23,7 @@
             
             {% if current_user.is_authenticated %}
                 <a href="#">Add Event</a>
-                <a href="#">View Your Events</a>
+                <a href="#view_events">View Your Events</a>
                 <a href="{{ url_for('logout') }}">Log Out</a>
             {% else %}
                 <a href="{{ url_for('create_account') }}">Sign Up</a>
@@ -77,7 +77,7 @@
            
         </form>
     </div>
-    <div id="view-events" class="events">
+    <div id="view-events" class="events container">
         
         {% for event in events %}
             <div class="event">
