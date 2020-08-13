@@ -80,10 +80,14 @@
     <div id="view-events" class="events container">
         
         {% for event in events %}
-            <div class="event">
-                <h3>{{event.name}}</h3>
-                <p>{{ event.content }}</p>
-            </div>
+            
+            {% if event.author == current_user.id %}
+                <div class="event">
+                    <h3>{{event.name}}</h3>
+                    <p>{{ event.content }}</p>
+                </div>
+            {% endif %}
+                
         {% endfor %}
             
     </div>
