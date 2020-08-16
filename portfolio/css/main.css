@@ -1,0 +1,93 @@
+:root{
+    --primary-color:dodgerblue;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-3dlight-color:var(--primary-color);
+}
+body{
+    /* background-color: var(--primary-color); */
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+.mobile-nav{
+    display: none;
+}
+header{
+    min-height: 60vh;
+    background-color: var(--primary-color);
+}
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+}
+
+.intro{
+    height: 80%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    /* background: url('../img/person_3.jpg') no-repeat center center/cover;
+     */
+    background-color: var(--primary-color);
+    color: white;
+}
+.text-lg{
+    font-size: 5rem;
+}
+.intro-text{
+    font-size: 1.5rem;
+}
+.scroll-nav-bar{
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.scroll-nav{
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+.nav-item{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    font-size:1.2rem;
+    /* background-color: var(--primary-color); */
+}
+.projects{
+    padding: 5rem 2rem  0 2rem;
+    color: var(--primary-color);
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.project-header{
+    text-align: center;
+}
+.project-list{
+    /* padding: 2.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    
+}
+.project-card{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 12px 15px  rgba(185, 206, 206, 0.28);
+    margin: 20px;
+}
