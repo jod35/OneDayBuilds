@@ -9,15 +9,15 @@ function documentScroll(){
 
 
         for (let i of nav_links){
-            i.style.color="rgb(172, 65, 26)";
-            i.style.padding="8px";
+            i.style.color="dodgerblue";
+            i.style.padding="20px";
         }
     }
     else{
-        navigation_bar.style.backgroundColor="rgb(172, 65, 26)";
+        navigation_bar.style.backgroundColor="dodgerblue";
         for (let i of nav_links){
            i.style.color="white";
-           i.style.backgroundColor=""
+        //    i.style.backgroundColor="dodgerblue";
         }
     }
 }
