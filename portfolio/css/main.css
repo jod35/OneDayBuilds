@@ -1,14 +1,17 @@
+:root{
+    --primary-color:rgb(172, 65, 26);
+}
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather', sans-serif;
 }
 html{
     scroll-behavior: smooth;
-    scrollbar-3dlight-color:black;
+    scrollbar-3dlight-color:var(--primary-color);
 }
 body{
-    /* background-color: black; */
+    /* background-color: var(--primary-color); */
 }
 a{
     text-decoration:none;
@@ -20,25 +23,23 @@ ul{
     display: none;
 }
 header{
-    min-height: 100vh;
-    background-color: black;
+    min-height: 60vh;
+    background-color: var(--primary-color);
 }
 nav{
     padding: 10px;
     display: flex;
     justify-content:center;
 }
-nav a{
-    text-transform: uppercase;
-    color: white;
-    padding: 20px;
-}
+
 .intro{
     height: 80%;
     padding: 10%;
     display: flex;
     justify-content: center;
-    background: black;
+    /* background: url('../img/person_3.jpg') no-repeat center center/cover;
+     */
+    background-color: var(--primary-color);
     color: white;
 }
 .text-lg{
@@ -48,17 +49,22 @@ nav a{
     font-size: 1.5rem;
 }
 .scroll-nav-bar{
-    background-color: black;
-    display: none;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .scroll-nav{
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
 }
-.scroll-nav a{
-    text-transform: uppercase;
+.nav-item{
+    text-transform: capitalize;
+    font-weight: bold;
     color: white;
     padding: 20px;
-    background-color: black;
+    font-size:1.2rem;
+    /* background-color: var(--primary-color); */
 }
