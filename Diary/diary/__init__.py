@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_migrate import Migrate
 from .config import Config
 from .utils.database import db
 from .utils.logins import login_manager
@@ -12,6 +13,7 @@ app.config.from_object(Config)
 
 db.init_app(app)
 login_manager.init_app(app)
+migrate=Migrate(app,db)
 
 
 #user loader

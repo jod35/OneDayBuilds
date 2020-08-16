@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="form">
+        
+        {% with messages = get_flashed_messages()  %}
+            {% if messages %}
+                {% for message in messages %}
+                    <li class="alert alert-success">{{ message }}</li>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+            
+        <h1>Sign Up</h1>
+        <form action="{{ url_for('create_account') }}" method="post">
+            {{ form.hidden_tag() }}
+            
+           <p>{{ form.username.label }}</p>
+           {{ form.username(class='form-control') }}
+           
+           {% for err in form.username.errors %}
+               <p style="color: red;">{{ error }}</p>
+           {% endfor %}
+
+           <p>{{ form.email.label }}</p>
+           {{ form.email(class='form-control') }}
+           
+           {% for err in form.email.errors %}
+               <p style="color: red;">{{ error }}</p>
+           {% endfor %}
+
+           <p>{{ form.password.label }}</p>
+           {{ form.password(class='form-control') }}
+           
+           {% for err in form.password.errors %}
+               <p style="color: red;">{{ error }}</p>
+           {% endfor %}
+
+           
+           <p>{{ form.confirm.label }}</p>
+           {{ form.confirm(class='form-control') }}
+           
+           {% for err in form.confirm.errors %}
+               <p style="color: red;">{{ error }}</p>
+           {% endfor %}
+           <br>
+           <br>
+           <input type="submit" value="Sign Up" class="mybtn">
+            <br>
+            <br>
+           <small>
+               Already have an account, <a href="{{ url_for('sign_in') }}">Login</a>
+           </small>
+        </form>
+    </div>
+{% endblock body %}
+    

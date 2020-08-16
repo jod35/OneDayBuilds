@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="form">
+        {% with messages = get_flashed_messages()  %}
+            {% if messages %}
+                {% for message in messages %}
+                    <li class="alert alert-success">{{ message }}</li>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <h1>Login</h1>
+        <form action="{{ url_for('sign_in') }}" method="post">
+            {{ form.hidden_tag() }}
+            
+           <p>{{ form.username.label }}</p>
+           {{ form.username(class='form-control') }}
+           
+           {% for err in form.username.errors %}
+               <p style="color: red;">{{ error }}</p>
+           {% endfor %}
+
+           <p>{{ form.password.label }}</p>
+           {{ form.password(class='form-control') }}
+           
+           {% for err in form.password.errors %}
+               <p style="color: red;">{{ error }}</p>
+           {% endfor %}
+           <br>
+            <p>{{ form.remember_me.label }}</p>
+            {{ form.remember_me }}
+           <br>
+           <br>
+           <input type="submit" value="Login" class="mybtn">
+           <br>
+           <br>
+          <small>
+              Do not have an account, <a href="{{ url_for('create_account') }}">Sign Up</a>
+          </small>
+        </form>
+    </div>
+{% endblock body %}
+    

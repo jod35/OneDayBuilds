@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='diary/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='diary/css/main.css')}}">
+    
+    {% if title %}
+        <title>My Dairy | {{title}}</title>
+    {% else %}
+        <title>My Dairy</title>
+    {% endif %}
+        
+</head>
+<body>
+    <header class="nav nav-bar">
+        <div >
+            <a href="{{ url_for('index') }}" class="logo">My Dairy</a>
+        </div>
+        <div class="nav-options">
+            
+            {% if current_user.is_authenticated %}
+                <a href="#">Add Event</a>
+                <a href="#view_events">View Your Events</a>
+                <a href="{{ url_for('logout') }}">Log Out</a>
+            {% else %}
+                <a href="{{ url_for('create_account') }}">Sign Up</a>
+                <a href="{{ url_for('sign_in') }}">Login</a>
+            {% endif %}
+                
+        </div>
+        <div class="mobile-nav-options">
+            <a href="#" class="menu-open-btn">&#9776;</a>
+            <a href="#" class="menu-close-btn">&times;</a>
+        </div>
+    </header>
+    <div class="mobile-nav">
+       <div class="mobile-nav-items">
+            
+            {% if current_user.is_authenticated %}
+                <a href="#add-form" class="mobile-link" id="show-form" onclick="displayForm()">Add Event</a>
+                <a href="#view-events" class="mobile-link" id="show-events">View Your Events</a>
+                <a href="{{ url_for('logout') }}" class="mobile-link">Log Out</a>
+            {% else %}
+                <a href="{{ url_for('create_account') }}">Sign Up</a>
+                <a href="{{ url_for('sign_in') }}">Login</a>
+            {% endif %}
+                
+       </div>
+    </div>
+    
+    <div class="addform" id="add-form">
+        {% with messages = get_flashed_messages()  %}
+        {% if messages %}
+            {% for message in messages %}
+                <li class="alert alert-success">{{ message }}</li>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <h3>What did you do?</h3>
+        <form action="{{ url_for('add_event') }}" method="post">
+            {{ form.hidden_tag() }}
+            
+           <p>{{ form.name.label }}</p>
+           {{ form.name(class='form-control') }}
+
+
+           <p>{{ form.content.label }}</p>
+           {{ form.content(class='form-control') }}
+           
+           
+           <br>
+           <br>
+           <input type="submit" value="Save" class="mybtn">
+           
+        </form>
+    </div>
+    <div id="view-events" class="events container">
+        
+        {% for event in events %}
+            
+            {% if event.author == current_user.id %}
+                <div class="event">
+                    <h3>{{event.name}}</h3>
+                    <p>{{ event.content }}</p>
+                </div>
+            {% endif %}
+                
+        {% endfor %}
+            
+    </div>
+    <script src="{{ url_for('static',filename='diary/js/index.js') }}"></script>
+    <script src="{{ url_for('static',filename='diary/js/app.js') }}"></script>
+</body>
+</html>
