@@ -17,8 +17,8 @@
                 <a class="nav-item" href="">Ssali Jonathan</a>
             </div>
             <div class="">
-                <a class="nav-item" href="#">home</a>
-                <a class="nav-item" href="">about</a>
+                <a class="nav-item" href="#home">home</a>
+                <a class="nav-item" href="#about">about</a>
                 <a class="nav-item" href="#projects">projects</a>
                 <a class="nav-item" href="">contacts</a>
                 <a class="nav-item" href="">Blog</a>
@@ -26,28 +26,9 @@
             </div>
        </div>
     </section>
-
     <header>
-=======
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="">home</a>
-            <a href="">projects</a>
-            <a href="">resume</a>
-            <a href="">about</a>
-        </nav>
-
-        <div class="mobile-nav">
-                <a href="">home</a>
-                <a href="">projects</a>
-                <a href="">resume</a>
-                <a href="">about</a>
-        </div>
-
         <!-- welcome section -->
-        <section class="intro">
+        <section class="intro" id="home">
             <div class="welcome">
                     <h1 class="text-lg">
                         Hello, I'm
@@ -62,23 +43,32 @@
         </section>
     </header>
 
-    <div class="projects" id="projects">
-        <div class="project-header">
-            <h1 class="">My Projects</h1>
-
-        <div class="welcome">
-                <h1 class="text-center lg">
-                    Hello, I'm
-                </h1>
-                <h1 class="text-center name">
-                    Ssali Jonathan
-                </h1>
-                <p class="text-center">
-                    And this is my resume
+    <section class="about" id="about">
+        <div class="myphoto">
+            <img src="img/mypic.jpeg" alt="My Picture">
+        </div>
+        <div class="mydescription">
+            <div class="desc-content">
+                <p>
+                    I am a software developer with a huge interest in learning and using new technologies,
+                    I believe with technology, a lot if the world's problems and it takes the the right people 
+                    to do the job.
+                </p>
+                <p>
+                    I currently specialize in technologies such as Django, Flask and React. I also have knowledge working with
+                    relational databases (PostgreSQL and MySQL) as well as NoSQL (Mongodb).
                 </p>
             </div>
-    </header>
-    <div class="projects" id="projects">
+            <div class="options">
+                <a href="" class="about-btn">Download CV</a>
+                <a href="#contacts" class="about-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------This is the projects section -->
+    <section class="projects" id="projects">
+        
         <div class="project-header">
             <h1 class="text-center">My Projects</h1>
 
@@ -86,82 +76,129 @@
         <div class="project-list">
             <div class="project-card">
                 <div class="proj-img">
-                    <img src="" alt="project Photo">
+                    <img src="img/anya.PNG" alt="project Photo">
                 </div>
                 <div class="proj-desc">
-                    <h3>project Name</h3>
-                    <p>project description</p>
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
                 </div>
             </div>
             <div class="project-card">
                 <div class="proj-img">
-                    <img src="" alt="project Photo">
+                    <img src="img/s2.png" alt="project Photo">
                 </div>
                 <div class="proj-desc">
-                    <h3>project Name</h3>
-                    <p>project description</p>
+                    <h3>BookTime</h3>
+                    <p>A book download and review website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://bookstoreliveapp.herokuapp.com/" class="mybtn">View Live</a>
+                    <a href="https://github.com/jod35/BookTime" class="mybtn">View the Code</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="proj-img">
-                    <img src="" alt="project Photo">
+                    <img src="img/s11.png" alt="project Photo">
                 </div>
                 <div class="proj-desc">
-                    <h3>project Name</h3>
-                    <p>project description</p>
+                    <h3>Lyric Zero</h3>
+                    <p>A website that helps you find lyrics for your favourite song.</p>
+                </div>
+                <div class="options">
+                    <a href="https://lyric0.herokuapp.com" class="mybtn">View Live</a>
+                    <a href="https://github.com/jod35/LyricZero" class="mybtn">View the Code</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="proj-img">
-                    <img src="" alt="project Photo">
+                    <img src="img/anya.PNG" alt="project Photo">
                 </div>
                 <div class="proj-desc">
-                    <h3>project Name</h3>
-                    <p>project description</p>
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
                 </div>
             </div>
             <div class="project-card">
                 <div class="proj-img">
-                    <img src="" alt="project Photo">
+                    <img src="img/anya.PNG" alt="project Photo">
                 </div>
                 <div class="proj-desc">
-                    <h3>project Name</h3>
-                    <p>project description</p>
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
                 </div>
             </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>project Name</h3>
-                    <p>project description</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="about" id="about">
-        <div class="myphoto">
-            <img src="img/mypic.jpeg" alt="My Picture">
-        </div>
-        <div class="mydescription">
-            <div class="dec-content">
 
+            <div class="project-card">
+                <div class="proj-img">
+                    <img src="img/anya.PNG" alt="project Photo">
+                </div>
+                <div class="proj-desc">
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
+                </div>
             </div>
-            <div class="options">
-                <a href="">Download CV</a>
-                <a href="#contacts">Contact Me</a>
+            <div class="project-card">
+                <div class="proj-img">
+                    <img src="img/anya.PNG" alt="project Photo">
+                </div>
+                <div class="proj-desc">
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="proj-img">
+                    <img src="img/anya.PNG" alt="project Photo">
+                </div>
+                <div class="proj-desc">
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="proj-img">
+                    <img src="img/anya.PNG" alt="project Photo">
+                </div>
+                <div class="proj-desc">
+                    <h3>Anya Properties</h3>
+                    <p>A house, land and warehouse sale and rent website.</p>
+                </div>
+                <div class="options">
+                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
+                    <!-- <a href="#" class="mybtn">View the Code</a> -->
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+   
     <div class="contacts">
 
     </div>
-=======
-        </div>
-    </div>
->>>>>>> master
+
     
     <script src="js/index.js"></script>
 </body>
