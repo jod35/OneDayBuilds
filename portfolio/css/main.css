@@ -23,7 +23,7 @@ ul{
     display: none;
 }
 header{
-    min-height: 60vh;
+    min-height: 69vh;
     background-color: var(--primary-color);
 }
 nav{
@@ -41,6 +41,7 @@ nav{
      */
     background-color: var(--primary-color);
     color: white;
+
 }
 .text-lg{
     font-size: 5rem;
@@ -68,11 +69,47 @@ nav{
     font-size:1.2rem;
     /* background-color: var(--primary-color); */
 }
+.about{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+.about-btn{
+    padding: 20px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin: 20px;
+    transition: all 0.8s;
+}
+.about-btn:hover{
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    color: white;
+    padding: 19px;
+}
+.myphoto{
+    padding: 5%;
+}
+.myphoto img{
+    border-radius: 50%;
+}
+.mydescription{
+    padding: 10% 0 0 0;
+}
+.desc-content{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: 20px;
+}
+.options{
+    padding: 20px;
+}
 .projects{
     padding: 5rem 2rem  0 2rem;
-    color: var(--primary-color);
+    color: white;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color:var(--primary-color);
 }
 .project-header{
     text-align: center;
@@ -81,13 +118,24 @@ nav{
     /* padding: 2.5rem; */
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 98%;
     margin: auto;
     
 }
 .project-card{
-    width: 300px;
+    width: 350px;
     height: 400px;
+    background-color: white;
+    color: black;
     box-shadow: 0 12px 15px  rgba(185, 206, 206, 0.28);
     margin: 20px;
+}
+.proj-img{
+    height: 50%;
+}
+.proj-img img{
+   width:350px;
+}
+.proj-desc{
+    padding: 10px;
 }
