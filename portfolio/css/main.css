@@ -4,7 +4,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family:'Roboto', sans-serif;
+    font-family:'Roboto Slab', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -128,7 +128,7 @@ nav{
     height: 400px;
     background-color: white;
     color: black;
-    box-shadow: 0 12px 15px  rgba(185, 206, 206, 0.28);
+    box-shadow: 0 12px 15px  rgba(46, 48, 48, 0.459);
     margin: 20px;
 }
 .proj-img{
@@ -138,9 +138,23 @@ nav{
    width:350px;
 }
 .proj-desc{
-    padding: 10px;
+    padding: 20px;
+}
+.proj-desc h3{
+    color: var(--primary-color);
 }
 .mybtn{
-    padding: 20px;
+    padding: 18px;
     border: 1px solid var(--primary-color);
+    margin-left: 20px;
+    color: var(--primary-color);
+    transition: all 0.8s;
+}
+
+.mybtn:hover{
+    padding: 18px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid black;
+
 }
