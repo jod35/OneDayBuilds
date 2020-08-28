@@ -74,6 +74,7 @@ nav{
     justify-content: space-between;
     min-height: 80vh;
 }
+
 .about-btn{
     padding: 20px;
     text-transform: uppercase;
@@ -88,6 +89,7 @@ nav{
     color: white;
     padding: 19px;
 }
+
 .myphoto{
     padding: 5%;
 }
@@ -105,6 +107,19 @@ nav{
 .options{
     padding: 20px;
     margin-top: 20px;
+}
+@media(max-width:650px){
+    .about{
+        display: block;
+        min-height: 90vh;
+        padding: 20px;
+    }
+    .myphoto{
+        padding: 2%;
+    }
+    .desc-content{
+        font-size: 1.2rem;
+    }
 }
 .projects{
     padding: 5rem 2rem  0 2rem;
@@ -128,8 +143,14 @@ nav{
     height: 400px;
     background-color: white;
     color: black;
-    box-shadow: 0 12px 15px  rgba(46, 48, 48, 0.459);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.795);
     margin: 20px;
+    transition: all 1.2s;
+}
+.project-card:hover{
+    /* transform: scale(1.1); */
+    background-color: black;
+    color: white;
 }
 .proj-img{
     height: 50%;
