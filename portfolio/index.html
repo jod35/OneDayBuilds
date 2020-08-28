@@ -1,206 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Poftfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> </head>   
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <section class="scroll-nav-bar">
-        
-        <div class="scroll-nav">
-            <div class="logo">
-                <a class="nav-item" href="">Ssali Jonathan</a>
-            </div>
-            <div class="">
-                <a class="nav-item" href="#home">home</a>
-                <a class="nav-item" href="#about">about</a>
-                <a class="nav-item" href="#projects">projects</a>
-                <a class="nav-item" href="">contacts</a>
-                <a class="nav-item" href="">Blog</a>
-                
-            </div>
-       </div>
+      <div class="scroll-nav">
+        <div class="logo">
+          <a class="nav-item" href="">Ssali Jonathan</a>
+        </div>
+        <div class="">
+          <a class="nav-item" href="#home">home</a>
+          <a class="nav-item" href="#about">about</a>
+          <a class="nav-item" href="#projects">projects</a>
+          <a class="nav-item" href="#contacts">contacts</a>
+          <a class="nav-item" href="">Blog</a>
+        </div>
+      </div>
     </section>
     <header>
-        <!-- welcome section -->
-        <section class="intro" id="home">
-            <div class="welcome">
-                    <h1 class="text-lg">
-                        Hello, I'm
-                    </h1>
-                    <h1 class="text-lg name">
-                        Ssali Jonathan
-                    </h1>
-                    <p class="intro-text">
-                        And this is my portfolio.
-                    </p>
-            </div>
-        </section>
+      <!-- welcome section -->
+      <section class="intro" id="home">
+        <div class="welcome">
+          <h1 class="text-lg">Hello, I'm</h1>
+          <h1 class="text-lg name">Ssali Jonathan</h1>
+          <p class="intro-text">And this is my portfolio.</p>
+        </div>
+      </section>
     </header>
 
     <section class="about" id="about">
-        <div class="myphoto">
-            <img src="img/mypic.jpeg" alt="My Picture">
+      <div class="myphoto">
+        <img src="img/mypic.jpeg" alt="My Picture" />
+      </div>
+      <div class="mydescription">
+        <div class="desc-content">
+          <p>
+            I am a software developer with a huge interest in learning and using
+            new technologies, I believe with technology, a lot if the world's
+            problems and it takes the the right people to do the job.
+          </p>
+          <p>
+            I currently specialize in technologies such as Django, Flask and
+            React. I also have knowledge working with relational databases
+            (PostgreSQL and MySQL) as well as NoSQL (MongoDB).
+          </p>
         </div>
-        <div class="mydescription">
-            <div class="desc-content">
-                <p>
-                    I am a software developer with a huge interest in learning and using new technologies,
-                    I believe with technology, a lot if the world's problems and it takes the the right people 
-                    to do the job.
-                </p>
-                <p>
-                    I currently specialize in technologies such as Django, Flask and React. I also have knowledge working with
-                    relational databases (PostgreSQL and MySQL) as well as NoSQL (MongoDB).
-                </p>
-            </div>
-            <div class="options">
-                <a href="" class="about-btn">Download CV</a>
-                <a href="#contacts" class="about-btn">Contact Me</a>
-            </div>
+        <div class="options">
+          <a href="" class="about-btn">Download CV</a>
+          <a href="#contacts" class="about-btn">Contact Me</a>
         </div>
+      </div>
     </section>
 
     <!-- ----------This is the projects section -->
     <section class="projects" id="projects">
-        
-        <div class="project-header">
-            <h1 class="text-center">My Projects</h1>
-
+      <div class="project-header">
+        <h1 class="text-center">My Projects</h1>
+      </div>
+      <div class="project-list">
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/anya.PNG" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Anya Properties</h3>
+            <p>A house, land and warehouse sale and rent website.</p>
+          </div>
+          <div class="options">
+            <a href="https://anyaproject.herokuapp.com" class="mybtn"
+              >View Live</a
+            >
+            <!-- <a href="#" class="mybtn">View the Code</a> -->
+          </div>
         </div>
-        <div class="project-list">
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/anya.PNG" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Anya Properties</h3>
-                    <p>A house, land and warehouse sale and rent website.</p>
-                </div>
-                <div class="options">
-                    <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a>
-                    <!-- <a href="#" class="mybtn">View the Code</a> -->
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/s2.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>BookTime</h3>
-                    <p>A book store website.</p>
-                </div>
-                <div class="options">
-                    <a href="https://bookstoreliveapp.herokuapp.com/" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/BookTime" class="mybtn">View the Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/s11.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Lyric Zero</h3>
-                    <p>A website that helps you find lyrics for your favourite song.</p>
-                </div>
-                <div class="options">
-                    <a href="https://lyric0.herokuapp.com" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/LyricZero" class="mybtn">View the Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/s9.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Covid-19 Tracker</h3>
-                    <p>A web app that is a search engine for COVID-19 cases worldwide.</p>
-                </div>
-                <div class="options">
-                    <a href="https://simple-deployment-demo.herokuapp.com/" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/covid-19-tracker" class="mybtn">View the Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/adv-todo.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Adv Todo List</h3>
-                    <p>A simple Todo List Application that enables you to priotize your tasks.</p>
-                </div>
-                <div class="options">
-                    <a href="https://jod35.github.io/Adv-Todo/" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/Adv-Todo" class="mybtn">View the Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/s3.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Loan Calc</h3>
-                    <p>A simple calculator for final amount of money given principal, rate and time.</p>
-                </div>
-                <div class="options">
-                    <a href="https://jod35.github.io/loan-calc/" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/loan-calc" class="mybtn">View the Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/s4.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Go Doggy</h3>
-                    <p>A simple dog store site.</p>
-                </div>
-                <div class="options">
-                    <a href="https://jod35.github.io/godoggy.github.io/" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/godoggy.github.io" class="mybtn">View the Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/s6.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>Fun Blog</h3>
-                    <p>A blogging Application built for learning.</p>
-                </div>
-   
-                <div class="options">
-                    <!-- <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a> -->
-                    <a href="https://github.com/jod35/fun-blog" class="mybtn">View the Code</a>
-                </div>
-            </div>
-           
-            <div class="project-card">
-                <div class="proj-img">
-                    <img src="img/favbooks.png" alt="project Photo">
-                </div>
-                <div class="proj-desc">
-                    <h3>FavBooks </h3>
-                    <p>A simple React App displaying all my favourite programming books sorted by years.</p>
-                </div>
-                <div class="options">
-                    <a href="https://fav-programming-books.netlify.app/" class="mybtn">View Live</a>
-                    <a href="https://github.com/jod35/Fav-Programming-Books" class="mybtn">View the Code</a>
-                </div>
-            </div>
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s2.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>BookTime</h3>
+            <p>A book store website.</p>
+          </div>
+          <div class="options">
+            <a href="https://bookstoreliveapp.herokuapp.com/" class="mybtn"
+              >View Live</a
+            >
+            <a href="https://github.com/jod35/BookTime" class="mybtn"
+              >View the Code</a
+            >
+          </div>
         </div>
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s11.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Lyric Zero</h3>
+            <p>A website that helps you find lyrics for your favourite song.</p>
+          </div>
+          <div class="options">
+            <a href="https://lyric0.herokuapp.com" class="mybtn">View Live</a>
+            <a href="https://github.com/jod35/LyricZero" class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s9.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Covid-19 Tracker</h3>
+            <p>
+              A web app that is a search engine for COVID-19 cases worldwide.
+            </p>
+          </div>
+          <div class="options">
+            <a
+              href="https://simple-deployment-demo.herokuapp.com/"
+              class="mybtn"
+              >View Live</a
+            >
+            <a href="https://github.com/jod35/covid-19-tracker" class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/adv-todo.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Adv Todo List</h3>
+            <p>
+              A simple Todo List Application that enables you to priotize your
+              tasks.
+            </p>
+          </div>
+          <div class="options">
+            <a href="https://jod35.github.io/Adv-Todo/" class="mybtn"
+              >View Live</a
+            >
+            <a href="https://github.com/jod35/Adv-Todo" class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s3.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Loan Calc</h3>
+            <p>
+              A simple calculator for final amount of money given principal,
+              rate and time.
+            </p>
+          </div>
+          <div class="options">
+            <a href="https://jod35.github.io/loan-calc/" class="mybtn"
+              >View Live</a
+            >
+            <a href="https://github.com/jod35/loan-calc" class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s4.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Go Doggy</h3>
+            <p>A simple dog store site.</p>
+          </div>
+          <div class="options">
+            <a href="https://jod35.github.io/godoggy.github.io/" class="mybtn"
+              >View Live</a
+            >
+            <a href="https://github.com/jod35/godoggy.github.io" class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s6.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Fun Blog</h3>
+            <p>A blogging Application built for learning.</p>
+          </div>
+
+          <div class="options">
+            <!-- <a href="https://anyaproject.herokuapp.com" class="mybtn">View Live</a> -->
+            <a href="https://github.com/jod35/fun-blog" class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="proj-img">
+            <img src="img/s8.png" alt="project Photo" />
+          </div>
+          <div class="proj-desc">
+            <h3>Prettie Pastries</h3>
+            <p>Prettie Pastry Shop Website.</p>
+          </div>
+          <div class="options">
+            <a href="https://fav-programming-books.netlify.app/" class="mybtn"
+              >View Live</a
+            >
+            <a
+              href="https://github.com/jod35/Fav-Programming-Books"
+              class="mybtn"
+              >View the Code</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
-   
-    <div class="contacts">
+    <!-- Contact section -->
+    <section id="contacts" class="contacts">
+      <div class="contact-header">
+        <h1>Let us get in touch</h1>
+      </div>
+      <div class="contact-section">
+        <div class="contact-form">
+          <form action="#" method="post">
+            <h2>Send A Message</h2>
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Your Phone"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                cols="45"
+                rows="10"
+                placeholder="Your Message"
+                class="form-input"
+              ></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="mybtn" />
+          </form>
+        </div>
+        <div class="contact-links">
+          <h2>Other Contacts</h2>
+          <div class="contact">
+            <h3><i class="fa fa-phone fa-2x"></i> Telephone</h3>
+            <p>+256 708 800 963</p>
+          </div>
+          <div class="contact">
+            <h3><i class="fa fa-envelope fa-2x"></i> Email</h3>
+            <p>jodestrevin@gmail.com</p>
+          </div>
 
-    </div>
+          <div class="contact">
+            <h3><i class="fa fa-github fa-2x"></i> Github</h3>
+            <a href="https://gihub.com/jod35"><p>Ssali Jonathan</p></a>
+          </div>
 
-    
+          <div class="contact">
+            <h3><i class="fa fa-twitter fa-2x"></i> Twitter</h3>
+            <a href="https://twitter.com/jodathan/35"><p>@jodathan35</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>

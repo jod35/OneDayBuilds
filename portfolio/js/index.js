@@ -9,7 +9,7 @@ function documentScroll(){
 
 
         for (let i of nav_links){
-            i.style.color="dodgerblue";
+            i.style.color="black";
             i.style.padding="20px";
         }
     }
