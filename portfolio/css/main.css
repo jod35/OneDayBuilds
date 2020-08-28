@@ -4,7 +4,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Merriweather', sans-serif;
+    font-family:'Roboto', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -104,6 +104,7 @@ nav{
 }
 .options{
     padding: 20px;
+    margin-top: 20px;
 }
 .projects{
     padding: 5rem 2rem  0 2rem;
@@ -138,4 +139,8 @@ nav{
 }
 .proj-desc{
     padding: 10px;
+}
+.mybtn{
+    padding: 20px;
+    border: 1px solid var(--primary-color);
 }
