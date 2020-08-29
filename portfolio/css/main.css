@@ -227,3 +227,15 @@ nav {
   background-color: black;
   color: white;
 }
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2%;
+  background-color: black;
+}
+.footer-section {
+  color: white;
+  font-weight: bold;
+}
