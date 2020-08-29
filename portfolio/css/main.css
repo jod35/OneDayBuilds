@@ -165,7 +165,7 @@ nav {
 }
 .mybtn {
   padding: 18px;
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   margin-left: 20px;
   color: var(--primary-color);
   transition: all 0.8s;
@@ -179,7 +179,7 @@ nav {
   border: 1px solid black;
 }
 .contacts {
-  padding: 10%;
+  padding: 10% 5% 0 5%;
   background-color: var(--primary-color);
   color: white;
 }
@@ -189,7 +189,6 @@ nav {
 .contact-section {
   width: 80%;
   margin: auto;
-  padding: 2%;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -213,10 +212,30 @@ nav {
 }
 .contact {
   padding: 20px;
+  background-color: rgb(236, 236, 236);
+  color: black;
+  margin: 20px;
+  transition: all 1.22s;
 }
 .contact h3 {
   font-size: 1.2rem;
 }
 .contact a {
+  color: var(--primary-color);
+}
+.contact:hover {
+  background-color: black;
   color: white;
+}
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2%;
+  background-color: black;
+}
+.footer-section {
+  color: white;
+  font-weight: bold;
 }
