@@ -91,7 +91,7 @@ nav {
 }
 
 .myphoto {
-  padding: 5%;
+  /* padding: 5%; */
 }
 .myphoto img {
   border-radius: 50%;
@@ -140,16 +140,16 @@ nav {
 .project-card {
   width: 350px;
   height: 400px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.795);
   margin: 20px;
   transition: all 1.2s;
 }
 .project-card:hover {
   /* transform: scale(1.1); */
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .proj-img {
   height: 50%;
@@ -170,6 +170,7 @@ nav {
   color: var(--primary-color);
   transition: all 0.8s;
   border-radius: 30px;
+  background: none;
 }
 
 .mybtn:hover {
@@ -180,7 +181,7 @@ nav {
 }
 .contacts {
   padding: 10% 5% 0 5%;
-  background-color: var(--primary-color);
+  background-color: black;
   color: white;
 }
 .contact-header {
@@ -212,8 +213,8 @@ nav {
 }
 .contact {
   padding: 20px;
-  background-color: rgb(236, 236, 236);
-  color: black;
+  background-color: var(--primary-color);
+  color: white;
   margin: 20px;
   transition: all 1.22s;
 }
@@ -224,7 +225,7 @@ nav {
   color: var(--primary-color);
 }
 .contact:hover {
-  background-color: black;
+  background-color: rgba(30, 143, 255, 0.452);
   color: white;
 }
 footer {
@@ -238,4 +239,43 @@ footer {
 .footer-section {
   color: white;
   font-weight: bold;
+}
+.open-btn {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+  .open-btn {
+    display: block;
+  }
+  .text-lg {
+    font-size: 4rem;
+  }
+  .myphoto {
+    text-align: center;
+  }
+  .myphoto img {
+    width: 300px;
+  }
+  .project-card {
+    width: 400px;
+  }
+  .proj-img {
+    width: 400px;
+  }
+  .proj-img img {
+    width: 400px;
+  }
+  .contacts {
+    padding: 10% 0 0 0;
+  }
+  .contact-section {
+    display: block;
+  }
 }
