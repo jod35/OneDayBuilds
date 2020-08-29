@@ -81,7 +81,7 @@ nav {
   border: 1px solid var(--primary-color);
   margin: 20px;
   transition: all 0.8s;
-  border-radius: 30px;
+  border-radius: 7px;
 }
 .about-btn:hover {
   background-color: var(--primary-color);
@@ -91,7 +91,7 @@ nav {
 }
 
 .myphoto {
-  /* padding: 5%; */
+  padding: 5%;
 }
 .myphoto img {
   border-radius: 50%;
@@ -105,8 +105,8 @@ nav {
   padding: 20px;
 }
 .options {
-  padding: 20px;
-  margin-top: 20px;
+  display: flex;
+  /* justify-content: space-between; */
 }
 @media (max-width: 650px) {
   .about {
@@ -222,7 +222,7 @@ nav {
   font-size: 1.2rem;
 }
 .contact a {
-  color: var(--primary-color);
+  color: white;
 }
 .contact:hover {
   background-color: rgba(30, 143, 255, 0.452);
@@ -248,6 +248,9 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .intro {
+    padding-top: 15%;
+  }
   .nav-links {
     display: none;
   }
@@ -257,25 +260,38 @@ footer {
   .text-lg {
     font-size: 4rem;
   }
+  .options {
+  }
+  .projects {
+    padding: 0;
+  }
+  .about-btn {
+    padding: 15px;
+  }
   .myphoto {
     text-align: center;
   }
   .myphoto img {
-    width: 300px;
+    width: 80%;
   }
   .project-card {
-    width: 400px;
+    width: 320px;
   }
   .proj-img {
-    width: 400px;
+    width: 300px;
   }
   .proj-img img {
-    width: 400px;
+    width: 300px;
   }
   .contacts {
     padding: 10% 0 0 0;
   }
   .contact-section {
     display: block;
+  }
+  .contact-links {
+  }
+  .contact {
+    width: 80%;
   }
 }
