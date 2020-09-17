@@ -68,6 +68,18 @@ nav {
   font-size: 1.2rem;
   /* background-color: var(--primary-color); */
 }
+.mobile-links {
+  height: 80vh;
+  text-transform: capitalize;
+  padding: 5%;
+
+  display: none;
+}
+.mob-nav-item {
+  padding: 20px;
+  color: black;
+  display: block;
+}
 .about {
   display: flex;
   justify-content: space-between;
@@ -163,6 +175,11 @@ nav {
 .proj-desc h3 {
   color: var(--primary-color);
 }
+.myphoto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .mybtn {
   padding: 18px;
   border: 2px solid var(--primary-color);
@@ -257,11 +274,14 @@ footer {
   .open-btn {
     display: block;
   }
+  .mobile-links {
+    height: 80vh;
+    display: none;
+  }
   .text-lg {
     font-size: 4rem;
   }
-  .options {
-  }
+
   .projects {
     padding: 0;
   }
@@ -275,13 +295,13 @@ footer {
     width: 80%;
   }
   .project-card {
-    width: 320px;
+    width: 80%;
   }
   .proj-img {
     width: 300px;
   }
   .proj-img img {
-    width: 300px;
+    width: 380px;
   }
   .contacts {
     padding: 10% 0 0 0;
